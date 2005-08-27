@@ -1,5 +1,3 @@
-# $Rev: 3426 $, $Date: 2005-08-27 17:42:47 $
-#
 Summary:	xvidtune application
 Summary(pl):	Aplikacja xvidtune
 Name:		xorg-app-xvidtune
@@ -7,7 +5,6 @@ Version:	0.99.0
 Release:	0.02
 License:	MIT
 Group:		X11/Application
-######		Unknown group!
 Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/app/xvidtune-%{version}.tar.bz2
 # Source0-md5:	5addaae05c1aee5fcb457bc177476cf4
 Patch0:		xvidtune-man.patch
@@ -18,10 +15,7 @@ BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXxf86vm-devel
 BuildRequires:	xorg-util-util-macros
 BuildRequires:	pkgconfig >= 0.19
-BuildRoot:	%{tmpdir}/xvidtune-%{version}-root-%(id -u -n)
-
-%define		_prefix		/usr/X11R6
-%define		_mandir		%{_prefix}/man
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 xstdcmap application.
@@ -29,11 +23,9 @@ xstdcmap application.
 %description -l pl
 Aplikacja xstdcmap.
 
-
 %prep
 %setup -q -n xvidtune-%{version}
 %patch0 -p1
-
 
 %build
 %{__aclocal}
@@ -44,17 +36,14 @@ Aplikacja xstdcmap.
 
 %{__make}
 
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-
 %clean
 rm -rf $RPM_BUILD_ROOT
-
 
 %files
 %defattr(644,root,root,755)
