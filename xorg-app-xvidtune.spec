@@ -1,5 +1,5 @@
 Summary:	xvidtune application
-Summary(pl.UTF-8):   Aplikacja xvidtune
+Summary(pl.UTF-8):	Aplikacja xvidtune
 Name:		xorg-app-xvidtune
 Version:	1.0.1
 Release:	1
