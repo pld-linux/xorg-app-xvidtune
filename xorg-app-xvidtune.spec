@@ -1,5 +1,5 @@
 Summary:	xvidtune application
-Summary(pl):	Aplikacja xvidtune
+Summary(pl.UTF-8):   Aplikacja xvidtune
 Name:		xorg-app-xvidtune
 Version:	1.0.1
 Release:	1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 xvidtune application.
 
-%description -l pl
+%description -l pl.UTF-8
 Aplikacja xvidtune.
 
 %prep
