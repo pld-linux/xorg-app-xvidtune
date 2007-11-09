@@ -4,7 +4,7 @@ Name:		xorg-app-xvidtune
 Version:	1.0.1
 Release:	1
 License:	MIT
-Group:		X11/Application
+Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xvidtune-%{version}.tar.bz2
 # Source0-md5:	e0744594f4e5969b20df28d897781318
 URL:		http://xorg.freedesktop.org/
