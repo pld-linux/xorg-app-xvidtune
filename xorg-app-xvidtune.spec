@@ -1,14 +1,14 @@
 Summary:	xvidtune application - video mode tuner for X server
 Summary(pl.UTF-8):	Aplikacja xvidtune do strojenia trybów obrazu X serwera
 Name:		xorg-app-xvidtune
-Version:	1.0.2
+Version:	1.0.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/xvidtune-%{version}.tar.bz2
-# Source0-md5:	e40eeb4454f2a7cdde3a14f5dfd3aadd
+# Source0-md5:	8676c9bb1658fe91de244e850f6c3ca8
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf >= 2.57
+BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	cpp
 BuildRequires:	pkgconfig >= 1:0.19
@@ -16,7 +16,7 @@ BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
 BuildRequires:	xorg-lib-libXxf86vm-devel
-BuildRequires:	xorg-util-util-macros >= 1.4
+BuildRequires:	xorg-util-util-macros >= 1.8
 Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
